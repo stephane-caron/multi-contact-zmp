@@ -21,7 +21,7 @@ stability. Based on these developments, we implement a whole-body controller
 and generate feasible multi-contact motions where an HRP-4 humanoid locomotes
 in challenging multi-contact scenarios.
 
-<img src="https://scaron.info/images/two-areas.png" height="250" />
+<img src="https://scaron.info/images/two-areas.png" height="400" />
 
 Authors:
 [Stéphane Caron](https://scaron.info),
@@ -44,13 +44,7 @@ sudo pip install pycddlib quadprog
 
 Next, you will need to install the
 [contact\_stability](https://github.com/stephane-caron/contact_stability) ROS
-package:
-
-```bash
-git clone --recursive https://github.com/stephane-caron/contact_stability.git
-```
-
-Link it into your Catkin workspace and build. The installation is successful if
+package. Link it into your Catkin workspace and build. The installation is successful if
 you can run ``roslaunch contact_stability all.launch`` without error.
 
 Finally, clone the repository with its submodule:
@@ -92,8 +86,10 @@ python motion_editor.py
 
 See the README in the ``editor/`` folder for instructions on GUI usage.
 
-**NB:** motion plans distributed in the ``plans/`` folder were found for HRP-4,
+## Note
+
+Motion plans distributed in the ``plans/`` folder were found for HRP-4,
 however we do not release its model (copyright issue). We replaced it by
-JVRC-1, which has the same kinematic structure but a different mass-geometry
-(in particular, its center of mass is higher). The motion plans were not
-updated to account for this change in model.
+JVRC-1, which has the same kinematic structure but different mass-geometry
+(in particular, its center of mass is higher). The plans were not updated
+to account for this change in model.
