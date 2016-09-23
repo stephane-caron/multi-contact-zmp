@@ -1,4 +1,4 @@
-### Motion editor
+# Motion editor
 
 This script provides a GUI to play motion plans stored as JSON files in the
 ``plans/`` folder. Each plan provides a sequence of contacts, step durations
@@ -20,7 +20,7 @@ python motion_editor.py plans/long-stride.json
 
 <img src="https://scaron.info/images/zmp-motion-editor.png" width="500" />
 
-## Note
+## Motions look weird: wrong robot model
 
 Motion plans distributed in the ``plans/`` folder were found for HRP-4,
 however we do not release its model (copyright issue). We replaced it by
