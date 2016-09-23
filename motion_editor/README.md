@@ -18,6 +18,8 @@ by:
 python motion_editor.py plans/long-stride.json
 ```
 
+<img src="https://scaron.info/images/zmp-motion-editor.png" width="500" />
+
 ## Note
 
 Motion plans distributed in the ``plans/`` folder were found for HRP-4,
