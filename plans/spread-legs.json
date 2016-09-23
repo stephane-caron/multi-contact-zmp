@@ -1,0 +1,61 @@
+{
+    "com_height": 0.75,
+    "contact_length": 0.22,
+    "contact_width": 0.14,
+    "contacts": {
+        "left_foothold_1": {
+            "pos": [
+                0.0,
+                0.425,
+                0.0
+            ],
+            "rpy": [
+                0.0,
+                -0.0,
+                0.0
+            ]
+        },
+        "right_foothold_1": {
+            "pos": [
+                0.0,
+                -0.425,
+                0.0
+            ],
+            "rpy": [
+                0.0,
+                -0.0,
+                0.0
+            ]
+        }
+    },
+    "friction": 0.4,
+    "stances": [
+        {
+            "comment": "Stance 0",
+            "contacts": {
+                "left_foot": "left_foothold_1",
+                "right_foot": "right_foothold_1"
+            },
+            "step_duration": 1.0,
+            "zmp": [
+                0.05,
+                0.0,
+                1.5
+            ]
+        },
+        {
+            "comment": "Stance 1",
+            "contacts": {
+                "left_foot": "left_foothold_1",
+                "right_foot": "right_foothold_1"
+            },
+            "step_duration": 2.5,
+            "zmp": [
+                0.05,
+                0.0,
+                1.5
+            ]
+        }
+    ],
+    "zmp_height": 1.5
+}

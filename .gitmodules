@@ -1,0 +1,6 @@
+[submodule "pymanoid"]
+	path = pymanoid
+	url = https://github.com/stephane-caron/pymanoid.git
+[submodule "openrave_models"]
+	path = openrave_models
+	url = https://github.com/stephane-caron/openrave_models.git

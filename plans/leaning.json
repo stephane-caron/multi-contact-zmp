@@ -1,0 +1,90 @@
+{
+    "com_height": 0.7,
+    "contact_length": 0.22,
+    "contact_width": 0.14,
+    "contacts": {
+        "left_foothold": {
+            "pos": [
+                0.033,
+                0.439,
+                0.285
+            ],
+            "rpy": [
+                0.571,
+                -0.0,
+                0.0
+            ]
+        },
+        "left_handhold": {
+            "pos": [
+                0.257,
+                0.467,
+                0.762
+            ],
+            "rpy": [
+                -0.021,
+                0.0,
+                0.0
+            ]
+        },
+        "right_foothold": {
+            "pos": [
+                0.0,
+                -0.195,
+                -0.052
+            ],
+            "rpy": [
+                -0.395,
+                0.0,
+                0.0
+            ]
+        },
+        "right_handhold": {
+            "pos": [
+                0.762,
+                -0.272,
+                0.775
+            ],
+            "rpy": [
+                0.992,
+                0.065,
+                0.033
+            ]
+        }
+    },
+    "friction": 0.5,
+    "stances": [
+        {
+            "comment": "Stance 0",
+            "contacts": {
+                "left_foot": "left_foothold",
+                "left_hand": "left_handhold",
+                "right_foot": "right_foothold"
+            },
+            "step_duration": 1.0,
+            "zmp": [
+                0.244,
+                0.06,
+                1.5
+            ]
+        },
+        {
+            "comment": "Stance 1",
+            "contacts": {
+                "left_foot": "left_foothold",
+                "left_hand": "left_handhold",
+                "right_foot": "right_foothold"
+            },
+            "free": {
+                "right_hand": "right_handhold"
+            },
+            "step_duration": 1.0,
+            "zmp": [
+                0.232,
+                0.051,
+                1.506
+            ]
+        }
+    ],
+    "zmp_height": 1.5
+}
