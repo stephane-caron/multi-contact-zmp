@@ -8,4 +8,4 @@ interaction mode* (Escape key) to move contacts around and observe variations
 of the area. The area plane can also be changed by zooming out and
 moving/tilting the blue box.
 
-<img src="https://scaron.info/images/full-support-area.png" width="500" />
+<img src="https://scaron.info/images/full-support-area.png" width="800" />
