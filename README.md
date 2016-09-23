@@ -55,41 +55,11 @@ git clone --recursive https://github.com/stephane-caron/tro-2016
 
 ## Usage
 
-There are two scripts in the top directory: ``full_support_area.py`` and
-``motion_editor.py``.
+There are three sub-folders:
 
-### Full support area
-
-Display the full support area for a set of contacts represented by red slabs.
-Switch to *object interaction mode* (Escape key) to move contacts around and
-observe variations of the area. The area plane can also be changed by zooming
-out and moving/tilting the blue box.
-
-### Motion editor
-
-This script provides a GUI to play motion plans stored as JSON files in the
-``plans/`` folder. Each plan provides a sequence of contacts, step durations
-and reference ZMP positions at the end of the step, from which controls are
-inferred by QP optimization.
-
-To run the motion editor, you will need to launch the associated ROS services:
-
-```bash
-roslaunch contact_stability all.launch
-```
-
-Once the service is up and running, you can do:
-
-```bash
-python motion_editor.py
-```
-
-See the README in the ``editor/`` folder for instructions on GUI usage.
-
-## Note
-
-Motion plans distributed in the ``plans/`` folder were found for HRP-4,
-however we do not release its model (copyright issue). We replaced it by
-JVRC-1, which has the same kinematic structure but different mass-geometry
-(in particular, its center of mass is higher). The plans were not updated
-to account for this change in model.
+- [full\_support\_area](full_support_area/) for the Full Support Area (Section
+  III of the paper)
+- [motion\_editor](motion_editor/) for the motion generation framework (Section
+  V) based on the Pendular Support Area (Section IV)
+- [n\_moment\_point](n_moment_point/) for the n-Moment Point defined in
+  Appendix A

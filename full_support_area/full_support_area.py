@@ -26,7 +26,7 @@ try:
     import pymanoid
 except:
     script_path = os.path.realpath(__file__)
-    sys.path.append(os.path.dirname(script_path) + '/pymanoid')
+    sys.path.append(os.path.dirname(script_path) + '/../pymanoid')
     import pymanoid
 
 from numpy import array, cross, dot, average, std, random

@@ -42,7 +42,7 @@
                 </mass>
             </body>
         </kinbody>
-        <robot file="../openrave_models/JVRC-1/JVRC-1.dae" name="JVRC-1">
+        <robot file="../../openrave_models/JVRC-1/JVRC-1.dae" name="JVRC-1">
             <kinbody>
                 <joint name="TRANS_X" type="slider" circular="true">
                     <body>TRANS_X_LINK</body>
