@@ -1,4 +1,4 @@
-# ZMP support areas for multi-contact mobility under frictional constraints
+# Multi-contact ZMP support areas
 
 Source code for http://arxiv.org/abs/1510.03232
 
