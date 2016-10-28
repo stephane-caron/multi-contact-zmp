@@ -50,9 +50,9 @@ The side panel includes the following buttons:
 - *Show targets* (in *Plan* mode): shows targets (contact locations, target ZMP) for the next step in cyan
 - *Show forces*: validate contact-stability of the motion by computing supporting contact forces
 
-## Motions look weird: wrong robot model
+## NB: motions will look weird due to wrong robot model
 
-Motion plans distributed in the ``plans/`` folder were found for HRP-4,
+Motion plans distributed in the [plans/](plans/) folder were found for HRP-4,
 however we do not release its model (copyright issue). We replaced it by
 JVRC-1, which has the same kinematic structure but different mass-geometry
 (in particular, its center of mass is higher). The plans were not updated

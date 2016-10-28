@@ -61,3 +61,6 @@ There are three sub-folders corresponding to different developments of the paper
 - [motion\_editor](motion_editor/) for the motion generation framework (Section
   V) based on the Pendular Support Area (Section IV)
 - [n\_moment\_point](n_moment_point/) for the n-Moment Point (Appendix A)
+
+<a href="motion_editor/"><img src="https://scaron.info/images/zmp-motion-editor.png" width="100%" /></a>
+*Screenshot of the motion editor*
