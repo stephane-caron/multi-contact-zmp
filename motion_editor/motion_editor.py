@@ -201,7 +201,7 @@ def convert_contacts_to_ros(contacts):
 
 
 def compute_zmp_support_area_ros(contacts, p_in, z_out, name, color):
-    req = contact_stability.srv.SupportAreaRequest(
+    req = contact_stability.srv.PendularAreaRequest(
         contacts=convert_contacts_to_ros(contacts),
         mass=robot.mass,
         p_in=geometry_msgs.msg.Point(p_in[0], p_in[1], p_in[2]),
@@ -290,7 +290,7 @@ def compute_static_stability_thread():
             rate.sleep()
             continue
         color = (0.1, 0.1, 0.1, 0.5)
-        req = contact_stability.srv.StaticStabilityAreaRequest(
+        req = contact_stability.srv.StaticAreaRequest(
             contacts=convert_contacts_to_ros(motion_plan.cur_stance.contacts),
             mass=robot.mass, z_out=motion_plan.com_height)
         try:
@@ -704,10 +704,10 @@ def init_ros():
         '/contact_stability/pendular/compute_support_area')
     compute_com_area = rospy.ServiceProxy(
         '/contact_stability/static/compute_support_area',
-        contact_stability.srv.StaticStabilityArea)
+        contact_stability.srv.StaticArea)
     compute_support_area = rospy.ServiceProxy(
         '/contact_stability/pendular/compute_support_area',
-        contact_stability.srv.SupportArea)
+        contact_stability.srv.PendularArea)
 
 
 def collision_callback(report, physics):
