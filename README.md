@@ -28,9 +28,6 @@ Authors:
 [Quang-Cuong Pham](https://www.normalesup.org/~pham/) and
 [Yoshihiko Nakamura](http://www.ynl.t.u-tokyo.ac.jp/)
 
-- [Pre-print on the arXiv](http://arxiv.org/abs/1510.03232)
-- [Accompanying video](https://scaron.info/videos/tro-2016.mp4)
-
 ## Installation
 
 On Ubuntu 14.04, you will first need to [install

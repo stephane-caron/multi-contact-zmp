@@ -1,4 +1,4 @@
-# Motion editor
+# ZMP motion editor
 
 This script provides a GUI to play motion plans stored as JSON files in the
 ``plans/`` folder. Each plan provides a sequence of contacts, step durations
